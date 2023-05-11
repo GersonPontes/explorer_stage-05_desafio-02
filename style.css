@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  display: grid;
+  height: 100vh;
+}
+
+.content{
+  display: flex;
+  width: 82rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.content .timer{
+  display: grid;
+  gap: 2.8rem;
+  width: 100%;
+}
+
+.content .timer .display{
+  width: 32rem;
+  display: flex;
+  justify-self: start;
+  align-self: end;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  color: #323238;
+}
+
+.content .timer .controls{
+  width: 32rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+  justify-self: start;
+}
+
+.content .timer .controls .buttonPlay:hover,
+.content .timer .controls .buttonStop:hover,
+.content .timer .controls .buttonPlus:hover,
+.content .timer .controls .buttonMinus:hover{
+  cursor: pointer;
+}
+
+.content .buttons{
+  display: grid;
+  grid-template: "A B" "C D";
+  justify-content: end;
+  gap: 3.2rem;
+  width: 100%;
+}
+
+.content .buttonFlorest{
+  grid-area: A;
+}
+
+.content .buttonRain{
+  grid-area: B;
+}
+
+.content .buttonCanteen{
+  grid-area: C;
+}
+
+.content .buttonFireplace{
+  grid-area: D;
+}
+
+.buttons .musicButton{
+  display: grid;
+  width: 13.8rem;
+  height: 15.2rem;
+  background: #E1E1E6;
+  border-radius: 2.4rem;
+}
+
+.buttons .pressedButton{
+  background: #02799D;
+}
+
+.buttons .pressedButton svg path{
+  fill: #FFFFFF;
+}
+
+.buttons .musicButton svg{
+  justify-self: center;
+  align-self: center; 
+}
+
+.buttons .musicButton:hover{
+  cursor: pointer;
+}
